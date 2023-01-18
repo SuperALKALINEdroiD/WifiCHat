@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CHatLAN</string>
+    <string name="send_button">Send</string>
+    <string name="message_hint">Chat on LAN</string>
+    <string name="Sent">Sent</string>
+    <string name="Sending">Sending</string>
+    <string name="Send">Send</string>
+    <string name="testMessage">Hello</string>
+    <string name="testTime">23:59</string>
+</resources>
