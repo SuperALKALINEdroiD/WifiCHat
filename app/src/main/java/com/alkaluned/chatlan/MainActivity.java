@@ -55,9 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         byte[] messageBytes = new byte[65535];
                         packet = new DatagramPacket(messageBytes, messageBytes.length);
                         socket.receive(packet);
-                        Log.w("Listen", listenHelper.toMessageAsString(messageBytes));
                         String currentDateTime = Calendar.getInstance().getTime().toString();
                         String time = currentDateTime.split(" ")[3];
+
+                        Log.w("Listen", time);
 
                         messageModelList.add(0, new MessageModel(listenHelper.toMessageAsString(messageBytes), time));
                         Handler handler = new Handler(Looper.getMainLooper());
